@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing - LeadFlow</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Google Fonts (Inter) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Custom Styles -->
+    <style type="text/tailwindcss">
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .cta-button {
+            @apply bg-blue-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-blue-700 transition-colors;
+        }
+        .secondary-button {
+            @apply bg-transparent text-slate-800 font-semibold py-2 px-5 border border-slate-300 rounded-lg hover:bg-slate-100 transition-colors;
+        }
+    </style>
+</head>
+<body class="bg-white text-slate-800">
+
+    <!-- Header -->
+    <header class="bg-white/80 backdrop-blur-md sticky top-0 z-50 border-b border-slate-200">
+        <nav class="container mx-auto px-4 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <a href="index.html" class="text-2xl font-bold text-slate-900">LeadFlow</a>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-6">
+                    <a href="how-it-works.html" class="text-slate-600 hover:text-blue-600 transition-colors">How It Works</a>
+                    <a href="industries.html" class="text-slate-600 hover:text-blue-600 transition-colors">Industries</a>
+                    <a href="pricing.html" class="text-slate-600 hover:text-blue-600 transition-colors">Pricing</a>
+                    <a href="contact.html" class="text-slate-600 hover:text-blue-600 transition-colors">Contact</a>
+                </div>
+
+                <!-- Desktop CTA Buttons -->
+                <div class="hidden md:flex items-center space-x-2">
+                    <a href="#" class="secondary-button">Login</a>
+                    <a href="#" class="cta-button">Get Started</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-slate-800 hover:text-blue-600">
+                        <i data-lucide="menu" class="w-6 h-6"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="how-it-works.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-600 hover:text-white hover:bg-blue-600">How It Works</a>
+                <a href="industries.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-600 hover:text-white hover:bg-blue-600">Industries</a>
+                <a href="pricing.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-600 hover:text-white hover:bg-blue-600">Pricing</a>
+                <a href="contact.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-600 hover:text-white hover:bg-blue-600">Contact</a>
+                 <div class="mt-4 pt-4 border-t border-slate-200 flex flex-col space-y-2">
+                    <a href="#" class="secondary-button text-center">Login</a>
+                    <a href="#" class="cta-button text-center">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Pricing Header -->
+        <section class="bg-white py-16 lg:py-24">
+            <div class="container mx-auto px-4 lg:px-8 text-center">
+                <h1 class="text-4xl lg:text-5xl font-bold text-slate-900">Simple, Transparent Pricing</h1>
+                <p class="mt-4 text-lg text-slate-600 max-w-2xl mx-auto">Choose the package that's right for your team. No hidden fees, no subscriptions.</p>
+            </div>
+        </section>
+
+        <!-- Pricing Tiers -->
+        <section class="bg-slate-50 py-20 lg:py-24">
+            <div class="container mx-auto px-4 lg:px-8">
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Starter Package -->
+                    <div class="bg-white p-8 rounded-lg shadow-md border border-slate-200 flex flex-col">
+                        <h3 class="text-2xl font-semibold text-slate-900">Starter</h3>
+                        <p class="mt-2 text-slate-500">Perfect for testing the waters.</p>
+                        <p class="mt-6 text-4xl font-bold text-slate-900">$99</p>
+                        <p class="text-slate-500">one-time purchase</p>
+                        <ul class="mt-8 space-y-4 text-slate-600 flex-grow">
+                            <li class="flex items-center"><i data-lucide="check" class="w-5 h-5 text-blue-600 mr-2"></i>100 Verified Leads</li>
+                            <li class="flex items-center"><i data-lucide="check" class="w-5 h-5 text-blue-600 mr-2"></i>Verified Emails</li>
+                            <li class="flex items-center"><i data-lucide="check" class="w-5 h-5 text-blue-600 mr-2"></i>Phone Numbers</li>
+                            <li class="flex items-center"><i data-lucide="check" class="w-5 h-5 text-blue-600 mr-2"></i>CSV Export</li>
+                        </ul>
+                        <a href="#" class="mt-8 w-full text-center secondary-button">Buy Now</a>
+                    </div>
+
+                    <!-- Growth Package (Most Popular) -->
+                    <div class="bg-white p-8 rounded-lg shadow-lg border-2 border-blue-600 relative flex flex-col">
+                        <div class="absolute top-0 -translate-y-1/2 left-1/2 -translate-x-1/2">
+                            <span class="bg-blue-600 text-white text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full">Most Popular</span>
+                        </div>
+                        <h3 class="text-2xl font-semibold text-slate-900">Growth</h3>
+                        <p class="mt-2 text-slate-500">Our most popular package for growing teams.</p>
+                        <p class="mt-6 text-4xl font-bold text-slate-900">$399</p>
+                        <p class="text-slate-500">one-time purchase</p>
+                        <ul class="mt-8 space-y-4 text-slate-600 flex-grow">
+                            <li class="flex items-center"><i data-lucide="check" class="w-5 h-5 text-blue-600 mr-2"></i>500 Verified Leads</li>
+                            <li class="flex items-center"><i data-lucide="check" class="w-5 h-5 text-blue-600 mr-2"></i>Verified Emails</li>
+                            <li class="flex items-center"><i data-lucide="check" class="w-5 h-5 text-blue-600 mr-2"></i>Phone Numbers</li>
+                            <li class="flex items-center"><i data-lucide="check" class="w-5 h-5 text-blue-600 mr-2"></i>CSV Export</li>
+                        </ul>
+                        <a href="#" class="mt-8 w-full text-center cta-button">Buy Now</a>
+                    </div>
+
+                    <!-- Enterprise Package -->
+                    <div class="bg-white p-8 rounded-lg shadow-md border border-slate-200 flex flex-col">
+                        <h3 class="text-2xl font-semibold text-slate-900">Enterprise</h3>
+                        <p class="mt-2 text-slate-500">For sales teams ready to dominate their market.</p>
+                        <p class="mt-6 text-4xl font-bold text-slate-900">$1,299</p>
+                        <p class="text-slate-500">one-time purchase</p>
+                        <ul class="mt-8 space-y-4 text-slate-600 flex-grow">
+                            <li class="flex items-center"><i data-lucide="check" class="w-5 h-5 text-blue-600 mr-2"></i>2000 Verified Leads</li>
+                            <li class="flex items-center"><i data-lucide="check" class="w-5 h-5 text-blue-600 mr-2"></i>Verified Emails</li>
+                            <li class="flex items-center"><i data-lucide="check" class="w-5 h-5 text-blue-600 mr-2"></i>Phone Numbers</li>
+                            <li class="flex items-center"><i data-lucide="check" class="w-5 h-5 text-blue-600 mr-2"></i>CSV Export</li>
+                        </ul>
+                        <a href="#" class="mt-8 w-full text-center secondary-button">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-50 border-t border-slate-200">
+        <div class="container mx-auto px-4 lg:px-8 py-12">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <!-- Logo and Branding -->
+                <div>
+                    <h3 class="text-xl font-bold text-slate-900">LeadFlow</h3>
+                    <p class="text-slate-500 mt-2">High-quality leads to fuel your growth.</p>
+                </div>
+                <!-- Pages -->
+                <div>
+                    <h4 class="font-semibold text-slate-800">Pages</h4>
+                    <ul class="mt-4 space-y-2">
+                        <li><a href="index.html" class="text-slate-600 hover:text-blue-600">Home</a></li>
+                        <li><a href="how-it-works.html" class="text-slate-600 hover:text-blue-600">How It Works</a></li>
+                        <li><a href="pricing.html" class="text-slate-600 hover:text-blue-600">Pricing</a></li>
+                        <li><a href="contact.html" class="text-slate-600 hover:text-blue-600">Contact</a></li>
+                    </ul>
+                </div>
+                <!-- More -->
+                 <div>
+                    <h4 class="font-semibold text-slate-800">More</h4>
+                    <ul class="mt-4 space-y-2">
+                        <li><a href="industries.html" class="text-slate-600 hover:text-blue-600">Industries</a></li>
+                        <li><a href="#" class="text-slate-600 hover:text-blue-600">Terms of Service</a></li>
+                        <li><a href="#" class="text-slate-600 hover:text-blue-600">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <!-- Social -->
+                <div>
+                    <h4 class="font-semibold text-slate-800">Connect</h4>
+                    <div class="flex space-x-4 mt-4">
+                        <a href="#" class="text-slate-500 hover:text-blue-600"><i data-lucide="twitter"></i></a>
+                        <a href="#" class="text-slate-500 hover:text-blue-600"><i data-lucide="linkedin"></i></a>
+                        <a href="#" class="text-slate-500 hover:text-blue-600"><i data-lucide="github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-12 pt-8 border-t border-slate-200 text-center text-slate-500">
+                <p>&copy; 2024 LeadFlow, Inc. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lucide Icons -->
+    <script src="https://cdn.jsdelivr.net/npm/lucide@latest/dist/lucide.min.js"></script>
+    <script>
+      lucide.createIcons();
+    </script>
+
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
